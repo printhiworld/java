@@ -5,72 +5,67 @@ public class Main {
         Scanner console = new Scanner(System.in);
 
         //task 1
-        boolean isIOS = true;
-        if (isIOS) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
+        for(int i = 1; i < 11; i++){
+            System.out.println( i);
         }
-        else {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        }
+        System.out.println("\n");
+
 
         //task 2
-        int clientDeviceYear = console.nextInt();
-        if (clientDeviceYear < 2015 && isIOS) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        for(int i = 10; i > 0; i--){
+            System.out.println( i);
         }
-        else if (clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        }
-        else if (clientDeviceYear >= 2015 && isIOS) {
-            System.out.println("Установите  версию приложения для iOS по ссылке");
-        }
-        else {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        }
+        System.out.println("\n");
 
         //task 3
-        int year = console.nextInt();
-        if (year <= 1584 && year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
-            System.out.println(year + " год является високосным");
+        for(int i = 2; i < 17; i += 2){
+            System.out.println( i);
         }
-        else {
-            System.out.println(year + " год не является високосным");
-        }
+        System.out.println("\n");
 
         //task 4
-        int deliveryDistance = console.nextInt();
-        if (deliveryDistance > 100) {
-            System.out.println("доставки нет");
+        for(int i = 10; i > -11; i--){
+            System.out.println( i);
         }
-        else if (deliveryDistance < 20) {
-            System.out.println("Потребуется дней: 1");
-        }
-        else if (deliveryDistance < 60) {
-            System.out.println("Потребуется дней: 2");
-        }
-        else {
-            System.out.println("Потребуется дней: 3");
-        }
+        System.out.println("\n");
 
         //task 5
-        int monthNumber = 12;
-        switch (monthNumber) {
-            case  1, 2, 12:
-                System.out.println("winter");
-                break;
-            case 3, 4, 5:
-                System.out.println("spring");
-                break;
-            case 6, 7, 8:
-                System.out.println("summer");
-                break;
-            case 9, 10, 11:
-                System.out.println("fall");
-                break;
-            default:
-                break;
+        for(int i = 1904; i < 2100; i+=4){
+            System.out.println(i + " год является високосным");
         }
+        System.out.println("\n");
+        //task 6
+        for(int i = 7; i < 105; i+=7){
+            System.out.println( i);
+        }
+        System.out.println("\n");
 
+        //task 7
+        for(int i = 1; i < 513; i*=2){
+            System.out.println( i);
+        }
+        System.out.println("\n");
+        //task 8
+        int sum = 0;
+        for(int i = 1; i <= 12; i++){
+            sum += 29000;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum + " рублей");
+        }
+        System.out.println("\n");
+
+        //task 9
+        int sum9 = 0;
+        for(int i = 1; i <= 12; i++){
+            sum9 += 29000 + sum9 * 0.01;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum9 + " рублей");
+        }
+        System.out.println("\n");
+
+        //task 10
+        for(int i = 1; i <= 10; i++){
+            System.out.println("2 * " + i + " = " + (2 * i));
+        }
+        System.out.println("\n");
 
 
     }
