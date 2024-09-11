@@ -3,60 +3,70 @@
 public class Main {
     public static void main(String[] args) {
         //task 1
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        int first = 1;
+        byte second = 2;
+        short third = 3;
+        long fourth = 4;
+        float fifth = 5.1F;
+        double sixth = 6.2;
+        System.out.println("Значение переменной first с типом int равно " + first);
+        System.out.println("Значение переменной second с типом byte равно " + second);
+        System.out.println("Значение переменной third с типом short равно " + third);
+        System.out.println("Значение переменной fourth с типом long равно " + fourth);
+        System.out.println("Значение переменной fifth с типом float равно " + fifth);
+        System.out.println("Значение переменной sixth с типом double равно " + sixth);
 
         //task 2
-        dog = dog + 4;
-        cat = cat + 4;
-        paper = paper + 4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        double one = 27.12;
+        long two = 987678965549L;
+        double three = 2.786;
+        int four = 569;
+        int five = -159;
+        int six = 27897;
+        int seven = 67;
 
         //task 3
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7639;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        first = 23;
+        second = 27;
+        third = 30;
+        int paper = 480;
+        System.out.println("На каждого ученика рассчитано " + paper/(first + second + third) + " листов бумаги");
 
         //task 4
-        var friend = 19;
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend);
+        int speed = 16;
+        speed *= 10;
+        System.out.println("За 20 минут машина произвела " + speed + " штук бутылок");
+        speed *= 3 * 24;
+        System.out.println("За сутки, машина произвела " + speed + " штук бутылок");
+        speed *= 3 ;
+        System.out.println("За 3 дня, машина произвела " + speed + " штук бутылок");
+        speed *= 10;
+        System.out.println("За месяц, машина произвела " + speed + " штук бутылок");
 
         //task 5
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog + "\n");
+        int paint = 120;
+        System.out.println("В школе, где " + paint / 6 + " классов, нужно " + paint / 3  + " банок белой краски и " + paint / 3 * 2 + " банок коричневой краски");
 
         //task 6
-        var pervyi = 78.2;
-        var vtoroi = 82.7;
-        System.out.println(pervyi + vtoroi);
-        System.out.println(pervyi - vtoroi);
+        double banana = 0.08;
+        double milk = 0.105;
+        double ice = 0.1;
+        double egg = 0.07;
+        System.out.println((banana * 5 + milk * 2 + ice * 2 + egg * 4) * 1000);
+        System.out.println((banana * 5 + milk * 2 + ice * 2 + egg * 4));
 
         //task 7
-        System.out.println((pervyi + vtoroi)%(pervyi - vtoroi));
+        first = 7000;
+        System.out.println(first / 250);
+        System.out.println(first / 500);
 
         //task 8
-        System.out.println(640 / 8);
-        System.out.println("Если в компании работает " + (640 / 8 + 94) + " человек, то всего " + ((640 / 8 + 94) * 8) + " часов работы может быть поделено между сотрудниками");
-
-
+        int masha = 67760;
+        int den = 83690;
+        int crist = 76230;
+        System.out.println("Маша теперь получает " + (masha / 100 * 110) + " рублей. Годовой доход вырос на " + (masha / 100 * 10 * 12) + " рублей");
+        System.out.println("denis теперь получает " + (den / 100 * 110) + " рублей. Годовой доход вырос на " + (den / 100 * 10 * 12) + " рублей");
+        System.out.println("kristina теперь получает " + (crist / 100 * 110) + " рублей. Годовой доход вырос на " + (crist / 100 * 10 * 12) + " рублей");
     }
 
 }
