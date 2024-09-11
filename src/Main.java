@@ -48,12 +48,12 @@ public class Main {
         System.out.println("В школе, где " + paint / 6 + " классов, нужно " + paint / 3  + " банок белой краски и " + paint / 3 * 2 + " банок коричневой краски");
 
         //task 6
-        double banana = 0.08;
-        double milk = 0.105;
-        double ice = 0.1;
-        double egg = 0.07;
-        System.out.println((banana * 5 + milk * 2 + ice * 2 + egg * 4) * 1000);
+        double banana = 80;
+        double milk = 105;
+        double ice = 100;
+        double egg = 70;
         System.out.println((banana * 5 + milk * 2 + ice * 2 + egg * 4));
+        System.out.println((banana * 5 + milk * 2 + ice * 2 + egg * 4) / 1000);
 
         //task 7
         first = 7000;
@@ -64,9 +64,9 @@ public class Main {
         int masha = 67760;
         int den = 83690;
         int crist = 76230;
-        System.out.println("Маша теперь получает " + (masha / 100 * 110) + " рублей. Годовой доход вырос на " + (masha / 100 * 10 * 12) + " рублей");
-        System.out.println("denis теперь получает " + (den / 100 * 110) + " рублей. Годовой доход вырос на " + (den / 100 * 10 * 12) + " рублей");
-        System.out.println("kristina теперь получает " + (crist / 100 * 110) + " рублей. Годовой доход вырос на " + (crist / 100 * 10 * 12) + " рублей");
+        System.out.println("Маша теперь получает " + (masha / 10 * 11) + " рублей. Годовой доход вырос на " + (masha / 10 * 12) + " рублей");
+        System.out.println("denis теперь получает " + (den / 10 * 11) + " рублей. Годовой доход вырос на " + (den / 10 * 12) + " рублей");
+        System.out.println("kristina теперь получает " + (crist / 10 * 11) + " рублей. Годовой доход вырос на " + (crist / 10 * 12) + " рублей");
     }
 
 }
