@@ -1,8 +1,6 @@
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
 
         //task 1
         for(int i = 1; i < 11; i++){
@@ -54,7 +52,7 @@ public class Main {
         System.out.println("\n");
 
         //task 9
-        int sum9 = 0;
+        double sum9 = 0;
         for(int i = 1; i <= 12; i++){
             sum9 += 29000 + sum9 * 0.01;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + sum9 + " рублей");
@@ -66,7 +64,6 @@ public class Main {
             System.out.println("2 * " + i + " = " + (2 * i));
         }
         System.out.println("\n");
-
 
     }
 
