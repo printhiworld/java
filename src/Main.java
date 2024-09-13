@@ -3,67 +3,85 @@ public class Main {
     public static void main(String[] args) {
 
         //task 1
-        for(int i = 1; i < 11; i++){
-            System.out.println( i);
+        int vklad = 15000;
+        int sum = 0;
+        int month = 0;
+        while (sum <2459000) {
+            sum += vklad;
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
         }
         System.out.println("\n");
-
 
         //task 2
-        for(int i = 10; i > 0; i--){
-            System.out.println( i);
+        int i = 0;
+        while (i < 10) {
+            i++;
+            System.out.print(i + " ");
         }
-        System.out.println("\n");
+        System.out.println();
+        for (i = 10; i > 0; i--){
+            System.out.print(i + " ");
+        }
+        System.out.println();
 
         //task 3
-        for(int i = 2; i < 17; i += 2){
-            System.out.println( i);
+        int death = 8;
+        int birth = 17;
+        int population = 12000000;
+        for (i = 1; i <= 10; i++){
+            population += (birth - death) * (population / 1000);
+            System.out.println("Год " + i + ", численность населения составляет " + population);
         }
-        System.out.println("\n");
 
         //task 4
-        for(int i = 10; i > -11; i--){
-            System.out.println( i);
+        double deposit = 15000;
+        int months = 0;
+        while (deposit < 12000000) {
+            deposit = deposit / 100 * 107;
+            months++;
+            System.out.println("Месяц " + months + ", сумма накоплений равна " + deposit);
+
         }
-        System.out.println("\n");
+        System.out.println(months);
 
         //task 5
-        for(int i = 1904; i < 2100; i+=4){
-            System.out.println(i + " год является високосным");
+        deposit = 15000;
+        months = 0;
+        while (deposit < 12000000) {
+            deposit = deposit / 100 * 107;
+            months++;
+            if (months % 6 == 0)
+                System.out.println("Месяц " + months + ", сумма накоплений равна " + deposit);
+
         }
-        System.out.println("\n");
+        System.out.println(months);
+
         //task 6
-        for(int i = 7; i < 105; i+=7){
-            System.out.println( i);
+        deposit = 15000;
+        months = 0;
+        while (months < (12 * 9)) {
+            deposit = deposit / 100 * 107;
+            months++;
+            if (months % 6 == 0)
+                System.out.println("Месяц " + months + ", сумма накоплений равна " + deposit);
+
         }
-        System.out.println("\n");
 
         //task 7
-        for(int i = 1; i < 513; i*=2){
-            System.out.println( i);
+        int friday = 1;
+        while (friday <= 31) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            friday += 7;
         }
-        System.out.println("\n");
+
         //task 8
-        int sum = 0;
-        for(int i = 1; i <= 12; i++){
-            sum += 29000;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum + " рублей");
+        int year = 2024;
+        for (i = year - 200; i < year + 100; i++) {
+            if (i % 79 == 0){
+                System.out.println(i);
+            }
         }
-        System.out.println("\n");
-
-        //task 9
-        double sum9 = 0;
-        for(int i = 1; i <= 12; i++){
-            sum9 += 29000 + sum9 * 0.01;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum9 + " рублей");
-        }
-        System.out.println("\n");
-
-        //task 10
-        for(int i = 1; i <= 10; i++){
-            System.out.println("2 * " + i + " = " + (2 * i));
-        }
-        System.out.println("\n");
 
     }
 
