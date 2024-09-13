@@ -12,6 +12,7 @@ public class Main {
         int[] third = {3, 2, 1};
 
         //task 2
+        System.out.println("task 2");
         for (int i = 0; i < first.length; i++){
             if (i == 2) {
                 System.out.println(first[i]);
@@ -38,6 +39,7 @@ public class Main {
         }
 
         //task 3
+        System.out.println("\ntask 3");
         for (int i = first.length - 1; i >= 0; i--){
             if (i == 0) {
                 System.out.println(first[i]);
@@ -64,6 +66,7 @@ public class Main {
         }
 
         //task 4
+        System.out.println("\ntask 4");
         for (int i = 0; i < first.length; i++){
             if (first[i] % 2 != 0){
                 first[i] += 1;
