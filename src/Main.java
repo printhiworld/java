@@ -4,14 +4,14 @@ public class Main {
 
         //task 1
         int vklad = 15000;
-        int sum = 0;
+        double sum = 0;
         int month = 0;
         while (sum <2459000) {
-            sum += vklad;
+            sum += vklad + sum * 0.1;
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
         }
-        System.out.println("\n");
+        System.out.println();
 
         //task 2
         int i = 0;
@@ -29,9 +29,9 @@ public class Main {
         int death = 8;
         int birth = 17;
         int population = 12000000;
-        for (i = 1; i <= 10; i++){
+        for (int year = 1; year <= 10; year++){
             population += (birth - death) * (population / 1000);
-            System.out.println("Год " + i + ", численность населения составляет " + population);
+            System.out.println("Год " + year + ", численность населения составляет " + population);
         }
 
         //task 4
