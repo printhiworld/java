@@ -18,7 +18,7 @@ public class Main {
     }
 
     public static void app(int clientDeviceYear, int clientOS) {
-        int currentYear = LocalDate.now().getYear();
+        int currentYear = 2015;
         if (clientDeviceYear < currentYear && clientOS == 1) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
